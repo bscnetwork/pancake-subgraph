@@ -1,0 +1,14 @@
+type Router @entity {
+    id: ID!
+
+    tokenAddress: String!
+    targetAddress: String!
+    amountTokenDesired: BigInt!
+    amountTokenMin: BigInt!
+    amountETHMin: BigInt!
+
+    #addLiquidityETH
+    addethBlock: BigInt
+    addethAt: BigInt
+    addethTx: String
+}
